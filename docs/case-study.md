@@ -22,7 +22,7 @@ Jede neue Marke bedeutete einen neuen Fork des Codes. Verbesserungen an einer Ve
 
 ## 2. Problem
 
-**Bedeutungsdrift.** Die Farben von Peters Elektro liegen zentral in `utils/cdColors.tsx`, und 23 Dateien nutzen diese Datei. Sieben Komponenten und Seiten definieren aber eigene Kopien davon. In allen sieben Kopien steht `primaryColor` für Grün (`#A8CF4E`), in der zentralen Datei für Dunkellila (`#232638`). Derselbe Name hat damit zwei Bedeutungen, je nachdem, welche Datei man öffnet.
+**Gleicher Name, andere Farbe.** Die Farben von Peters Elektro liegen zentral in `utils/cdColors.tsx`, und 23 Dateien nutzen diese Datei. Sieben Komponenten und Seiten definieren aber eigene Kopien davon. In allen sieben Kopien steht `primaryColor` für Grün (`#A8CF4E`), in der zentralen Datei für Dunkellila (`#232638`). Derselbe Name hat damit zwei Bedeutungen, je nachdem, welche Datei man öffnet.
 
 **Werte außerhalb des Systems.** Im Code stehen 227 Hex-Farbwerte, davon 31 verschiedene, und 64 Inline-Styles. Tailwind ist installiert, die Theme-Konfiguration ist aber leer.
 
