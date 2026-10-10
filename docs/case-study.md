@@ -36,6 +36,12 @@ Bei einem Experiment mit Figma Make, in dem ich die Navbar von Peters Elektro ü
 - Tailwind installiert, Theme-Konfiguration leer
 - Auch das Navbar-Redesign wiederholt das Muster: 19 verschiedene Farbwerte (inklusive Transparenzstufen) und 42 Inline-Styles in einer einzigen Komponente
 
+*Was daraus folgt*
+- Jede Farbänderung muss an bis zu sechs Stellen nachgezogen werden. Wird eine vergessen, laufen die Definitionen auseinander. Genau so ist die grüne `primaryColor` entstanden
+- Inline-Styles haben im Browser Vorrang vor jedem Stylesheet. Ein Theme lässt sich deshalb nicht zentral darüberlegen, sondern nur durch Änderungen in jeder einzelnen Datei
+- Layout läuft über Tailwind-Klassen, Farbe über Inline-Styles. Zwei parallele Wege, Gestaltung festzulegen, machen den Code schwerer zu überblicken
+- Ein Redesign wie die neue Navbar lässt sich nicht einfach übernehmen, sondern muss Wert für Wert von Hand zurück in den Baukasten übertragen werden
+
 **Keine Quelle im Design**
 - Markenfarben in Figma nur als Farbflächen, nicht als Styles oder Variables
 - Farben von Hand in den Code übertragen
