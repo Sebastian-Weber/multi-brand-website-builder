@@ -43,8 +43,11 @@ Bei einem Experiment mit Figma Make, in dem ich die Navbar von Peters Elektro ü
 - 5 Schriftfamilien geladen, 2 genutzt
 - Keine Typo-Skala: 15, 16, 17 und 18 px nebeneinander
 
-**Kontrast** *(noch live zu bestätigen)*
-- Sekundärtext `#6D6D6D` verfehlt auf farbigen Flächen WCAG 2.2 AA (4.5:1), z. B. 2.9:1 auf Blau, 3.4:1 auf Grün
+**Kontrast**
+- Startseite: 3 Kontrastfehler laut WAVE, alle dasselbe Paar. Grauer Überschriftentext `#6D6D6D` auf Hellblau `#80CDDE` erreicht 2.88:1 und verfehlt selbst die 3:1, die WCAG 2.2 für große Schrift verlangt
+- Dieselbe Überschrift in der Card daneben, auf Lachs `#FBCAAE`, besteht. Gleiche Komponente, gleiche Textfarbe, nur der Hintergrund entscheidet über die Lesbarkeit
+- Seite "Über uns": formal bestanden (4.65:1), nach APCA (Lc 68.3) für Fließtext in 16 px aber zu schwach
+- Dort stammt die Textfarbe aus der zentralen Datei, die Hintergrundfarbe aus einer lokalen Kopie. Ob das Paar lesbar ist, hat niemand bewusst entschieden
 
 ## 3. UI-Audit (Bestandsaufnahme)
 
