@@ -25,13 +25,14 @@ Bei einem Experiment mit Figma Make, in dem ich die Navbar von Peters Elektro ü
 ## 2. Problem
 
 **Gleicher Name, andere Farbe**
-- Zentrale Farbdatei `cdColors.tsx`, genutzt von 23 Dateien
-- 7 Komponenten und Seiten definieren eigene Kopien
+- Zentrale Farbdatei `cdColors.tsx`, genutzt von 15 Dateien
+- 5 Komponenten und Seiten definieren eigene, aktive Kopien; 2 weitere liegen auskommentiert im Code
 - Dort ist `primaryColor` Grün (`#A8CF4E`), zentral Dunkellila (`#232638`)
 
-**Werte außerhalb des Systems**
-- 227 Hex-Farbwerte im Code, davon 31 verschiedene
-- 64 Inline-Styles
+**Sechs Farbdefinitionen statt einer**
+- 133 Hex-Farbwerte im aktiven Code, davon 24 verschiedene
+- 129 davon stehen in den sechs Farbdefinitionen (zentrale Datei plus 5 Kopien)
+- 56 Inline-Styles setzen die Farben direkt ins Markup
 - Tailwind installiert, Theme-Konfiguration leer
 - Auch das Navbar-Redesign wiederholt das Muster: 19 verschiedene Farbwerte (inklusive Transparenzstufen) und 42 Inline-Styles in einer einzigen Komponente
 
@@ -51,15 +52,17 @@ Bei einem Experiment mit Figma Make, in dem ich die Navbar von Peters Elektro ü
 
 ## 3. UI-Audit (Bestandsaufnahme)
 
-Erhoben am 10.10.2026 auf dem Stand `v0-baseline`.
+Erhoben am 10.10.2026 auf dem Stand `v0-baseline`. Gezählt wurde nur aktiver Code, auskommentierte Stellen sind ausgenommen.
 
 | Kennzahl | Wert |
 |---|---|
-| Hex-Farbwerte in TSX-Dateien | 227 |
-| davon verschiedene Werte | 31 |
-| Inline-Styles (`style={{…}}`) | 64 |
-| Dateien, die `cdColors` nutzen | 23 |
-| Lokale Kopien der Farbdefinition | 7 |
+| Hex-Farbwerte in TSX-Dateien | 133 |
+| davon verschiedene Werte | 24 |
+| davon in Farbdefinitionen | 129 |
+| Inline-Styles (`style={{…}}`) | 56 |
+| Dateien, die die zentrale `cdColors` nutzen | 15 |
+| Aktive lokale Kopien der Farbdefinition | 5 |
+| Auskommentierte Kopien der Farbdefinition | 2 |
 | Geladene Schriftfamilien | 5 |
 | davon im Code verwendet | 2 |
 | Farben in Figma als Styles oder Variables | 0 |
