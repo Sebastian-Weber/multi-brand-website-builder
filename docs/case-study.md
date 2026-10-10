@@ -12,11 +12,11 @@ Der Baukasten ist ein React-Projekt (TypeScript, Vite) mit wiederverwendbaren Se
 
 Bisher habe ich den Baukasten für jede Marke kopiert. Die Entwicklung lässt sich in drei Stufen nachvollziehen:
 
-| Stand | Zeitraum | Umgang mit Farben |
-|---|---|---|
-| Erstes Grundgerüst | Okt. 2024 | Kein Farbsystem, Tailwind-Theme leer |
-| Erste Anwendung auf einen Handwerksbetrieb | Okt. 2024 | Palette in der Tailwind-Config, Farbnamen an die Marke gebunden |
-| Peters Elektro GmbH (fiktiv) | bis Juni 2026 | Zentrale Farbdatei `cdColors.tsx`, ergänzt durch lokale Kopien |
+| Stand | Umgang mit Farben |
+|---|---|
+| Erstes Grundgerüst | Kein Farbsystem, Tailwind-Theme leer |
+| Erste Anwendung auf einen Handwerksbetrieb | Palette in der Tailwind-Config, Farbnamen an die Marke gebunden |
+| Peters Elektro GmbH (fiktiv) | Zentrale Farbdatei `cdColors.tsx`, ergänzt durch lokale Kopien |
 
 Jede neue Marke bedeutete einen neuen Fork des Codes. Verbesserungen an einer Version erreichten die anderen nicht, und markengebundene Namen wanderten in das nächste Projekt mit.
 
