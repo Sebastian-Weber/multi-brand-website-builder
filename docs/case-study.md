@@ -8,9 +8,9 @@
 
 ## 1. Ausgangslage
 
-Der Baukasten ist ein React-Projekt (TypeScript, Vite) mit wiederverwendbaren Sektions-Templates: Hero, Galerie, Cards, Text mit Bild, Kontaktformular, Footer. Gedacht ist er für kleine Service- und Handwerksbetriebe, die eine eigene Website brauchen, aber kein individuelles Projekt.
+Mein Baukasten ist ein React-Projekt (TypeScript, Vite) mit wiederverwendbaren Sektions-Templates: Hero, Galerie, Cards, Text mit Bild, Kontaktformular, Footer. Gedacht ist er für kleine Service- und Handwerksbetriebe, die eine eigene Website brauchen, aber kein individuelles Projekt.
 
-Bisher habe ich den Baukasten für jede Marke kopiert. Die Entwicklung lässt sich in drei Stufen nachvollziehen:
+Bisher habe ich meinen Baukasten für jede Marke kopiert. Die Entwicklung lässt sich in drei Stufen nachvollziehen:
 
 | Stand | Umgang mit Farben |
 |---|---|
@@ -20,7 +20,7 @@ Bisher habe ich den Baukasten für jede Marke kopiert. Die Entwicklung lässt si
 
 Jede neue Marke bedeutete einen neuen Fork des Codes. Verbesserungen an einer Version erreichten die anderen nicht, und markengebundene Namen wanderten in das nächste Projekt mit.
 
-Bei einem Experiment mit Figma Make, in dem ich die Navbar von Peters Elektro überarbeitete, zeigte sich ein zweiter Anwendungsfall, der im Berufsalltag häufiger vorkommt: eine bestehende Marke behutsam aufzufrischen. Auch einen solchen Refresh hätte ich bis dahin getrennt vom Baukasten in einem eigenen Repository umgesetzt. Ob neue Marke oder überarbeitetes Erscheinungsbild, jede Variante erforderte eine eigene Kopie des Codes. Beide Fälle lassen sich mit demselben Ansatz lösen: mit Design Tokens.
+Bei einem Experiment mit Figma Make, in dem ich die Navbar von Peters Elektro überarbeitete, zeigte sich ein zweiter Anwendungsfall, der im Berufsalltag häufiger vorkommt: eine bestehende Marke behutsam aufzufrischen. Auch einen solchen Refresh hätte ich bis dahin getrennt von meinem Baukasten in einem eigenen Repository umgesetzt. Ob neue Marke oder überarbeitetes Erscheinungsbild, jede Variante erforderte eine eigene Kopie des Codes. Beide Fälle lassen sich mit demselben Ansatz lösen: mit Design Tokens.
 
 ## 2. Problem
 
