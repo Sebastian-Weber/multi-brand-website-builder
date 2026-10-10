@@ -33,6 +33,7 @@ Bei einem Experiment mit Figma Make, in dem ich die Navbar von Peters Elektro ü
 - 227 Hex-Farbwerte im Code, davon 31 verschiedene
 - 64 Inline-Styles
 - Tailwind installiert, Theme-Konfiguration leer
+- Auch das Navbar-Redesign wiederholt das Muster: 19 verschiedene Farbwerte (inklusive Transparenzstufen) und 42 Inline-Styles in einer einzigen Komponente
 
 **Keine Quelle im Design**
 - Markenfarben in Figma nur als Farbflächen, nicht als Styles oder Variables
