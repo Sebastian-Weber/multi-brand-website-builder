@@ -98,7 +98,7 @@ Das Projekt ist als MVP angelegt, das für sich abgeschlossen und veröffentlich
 
 *Folgt.*
 
-## 7. Umsetzung
+## 7. Lösung
 
 *Folgt.*
 
