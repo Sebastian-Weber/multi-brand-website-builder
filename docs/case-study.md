@@ -20,6 +20,8 @@ Bisher habe ich den Baukasten für jede Marke kopiert. Die Entwicklung lässt si
 
 Jede neue Marke bedeutete einen neuen Fork des Codes. Verbesserungen an einer Version erreichten die anderen nicht, und markengebundene Namen wanderten in das nächste Projekt mit.
 
+Beim Überarbeiten der Navbar von Peters Elektro zeigte sich ein zweiter, im Alltag häufigerer Anwendungsfall: eine bestehende Marke behutsam auffrischen. Auch dieses Redesign entstand getrennt vom Baukasten, in einem eigenen Repo. Ob neue Marke oder Refresh, jede Variante wurde zur Kopie. Beide Fälle löst dieselbe Mechanik: Design Tokens.
+
 ## 2. Problem
 
 **Gleicher Name, andere Farbe**
@@ -66,7 +68,7 @@ Zusätzliche Auffälligkeiten in `cdColors.tsx`:
 
 ## 4. Ziel
 
-Eine Codebasis, in der eine neue Marke über ein Token-Set entsteht statt über eine Kopie des Codes.
+Eine Codebasis, in der eine Marke über ein Token-Set aufgefrischt oder ausgetauscht wird statt über eine Kopie des Codes.
 
 ## 5. Scope
 
@@ -78,12 +80,13 @@ Das Projekt ist als MVP angelegt, das für sich abgeschlossen und veröffentlich
 - Format: DTCG (Design Tokens Community Group)
 - Build mit Style Dictionary zu CSS Custom Properties
 - `cdColors` verweist auf die erzeugten Variablen, die lokalen Kopien entfallen
-- Eine zweite, fiktive Marke als Farbpalette, umschaltbar auf der Startseite
+- Zweites Theme "Peters Refresh" mit den Farben aus dem Navbar-Redesign, umschaltbar auf der Startseite (nur Farben; Schrift, Verläufe und Animationen des Redesigns bleiben außen vor)
 
-**Abbruchkriterium:** Das MVP ist fertig, wenn die zweite Marke auf der Startseite per Umschalter funktioniert und die Kontrastwerte für Fließtext WCAG 2.2 AA erfüllen.
+**Abbruchkriterium:** Das MVP ist fertig, wenn "Peters Refresh" auf der Startseite per Umschalter funktioniert und die Kontrastwerte für Fließtext WCAG 2.2 AA erfüllen.
 
 **Mögliche Module**
 
+- Zweite, fiktive Marke aus einem anderen Gewerk (Multi-Brand)
 - Typografie-Tokens
 - Component-Tokens (Button, Card)
 - Figma-Sync mit Tokens Studio
