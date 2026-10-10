@@ -43,7 +43,7 @@ Jede neue Marke bedeutete einen neuen Fork des Codes. Verbesserungen an einer Ve
 **Kontrast** *(noch live zu bestätigen)*
 - Sekundärtext `#6D6D6D` verfehlt auf farbigen Flächen WCAG 2.2 AA (4.5:1), z. B. 2.9:1 auf Blau, 3.4:1 auf Grün
 
-## 3. Audit
+## 3. UI-Audit (Bestandsaufnahme)
 
 Erhoben am 10.10.2026 auf dem Stand `v0-baseline`.
 
