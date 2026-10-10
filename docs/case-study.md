@@ -20,7 +20,7 @@ Bisher habe ich den Baukasten für jede Marke kopiert. Die Entwicklung lässt si
 
 Jede neue Marke bedeutete einen neuen Fork des Codes. Verbesserungen an einer Version erreichten die anderen nicht, und markengebundene Namen wanderten in das nächste Projekt mit.
 
-Beim Experimentieren mit Figma Make während der Überarbeitung der Navbar von Peters Elektro zeigte sich ein zweiter, im Alltag häufigerer Anwendungsfall: eine bestehende Marke behutsam auffrischen. Auch solch einen Refresh der Marke bzw. ein Redesign hätte ich bis dahin getrennt vom Baukasten, in einem eigenen Repo durchgeführt. Ob neue Marke oder Refresh, jede Variante bedeutete eine Kopie. Beide Fälle löst dieselbe Mechanik: Design Tokens.
+Bei einem Experiment mit Figma Make, in dem ich die Navbar von Peters Elektro überarbeitete, zeigte sich ein zweiter Anwendungsfall, der im Berufsalltag häufiger vorkommt: eine bestehende Marke behutsam aufzufrischen. Auch einen solchen Refresh hätte ich bis dahin getrennt vom Baukasten in einem eigenen Repository umgesetzt. Ob neue Marke oder überarbeitetes Erscheinungsbild, jede Variante erforderte eine eigene Kopie des Codes. Beide Fälle lassen sich mit demselben Ansatz lösen: mit Design Tokens.
 
 ## 2. Problem
 
