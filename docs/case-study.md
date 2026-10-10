@@ -63,6 +63,7 @@ Erhoben am 10.10.2026 auf dem Stand `v0-baseline`.
 | Geladene Schriftfamilien | 5 |
 | davon im Code verwendet | 2 |
 | Farben in Figma als Styles oder Variables | 0 |
+| Kontrastfehler laut WAVE (Startseite) | 3 |
 
 Zusätzliche Auffälligkeiten in `cdColors.tsx`:
 
