@@ -22,15 +22,26 @@ Jede neue Marke bedeutete einen neuen Fork des Codes. Verbesserungen an einer Ve
 
 ## 2. Problem
 
-**Gleicher Name, andere Farbe.** Die Farben von Peters Elektro liegen zentral in `utils/cdColors.tsx`, und 23 Dateien nutzen diese Datei. Sieben Komponenten und Seiten definieren aber eigene Kopien davon. In allen sieben Kopien steht `primaryColor` für Grün (`#A8CF4E`), in der zentralen Datei für Dunkellila (`#232638`). Derselbe Name hat damit zwei Bedeutungen, je nachdem, welche Datei man öffnet.
+**Gleicher Name, andere Farbe**
+- Zentrale Farbdatei `cdColors.tsx`, genutzt von 23 Dateien
+- 7 Komponenten und Seiten definieren eigene Kopien
+- Dort ist `primaryColor` Grün (`#A8CF4E`), zentral Dunkellila (`#232638`)
 
-**Werte außerhalb des Systems.** Im Code stehen 227 Hex-Farbwerte, davon 31 verschiedene, und 64 Inline-Styles. Tailwind ist installiert, die Theme-Konfiguration ist aber leer.
+**Werte außerhalb des Systems**
+- 227 Hex-Farbwerte im Code, davon 31 verschiedene
+- 64 Inline-Styles
+- Tailwind installiert, Theme-Konfiguration leer
 
-**Keine Quelle im Design.** In Figma sind die Markenfarben als Farbflächen im Moodboard angelegt, nicht als Styles oder Variables. Farben wurden beim Gestalten von dort abgegriffen und im Code von Hand übertragen. Eine verbindliche Quelle gab es weder im Design noch im Code.
+**Keine Quelle im Design**
+- Markenfarben in Figma nur als Farbflächen, nicht als Styles oder Variables
+- Farben von Hand in den Code übertragen
 
-**Uneinheitliche Typografie.** Fünf Schriftfamilien werden geladen, im Code referenziert sind nur zwei (Lato, Unica One). Eine Typo-Skala gibt es nicht, Schriftgrößen von 15, 16, 17 und 18 px liegen nebeneinander.
+**Uneinheitliche Typografie**
+- 5 Schriftfamilien geladen, 2 genutzt
+- Keine Typo-Skala: 15, 16, 17 und 18 px nebeneinander
 
-**Kontrast.** *(Noch auf der Live-Seite zu bestätigen.)* Der Sekundärtext `#6D6D6D` erreicht rechnerisch auf mehreren farbigen Hintergründen der Palette nicht das WCAG-2.2-Minimum von 4.5:1 für Fließtext, z. B. 2.9:1 auf Blau `#80CDDE` und 3.4:1 auf Grün `#9EDFB9`.
+**Kontrast** *(noch live zu bestätigen)*
+- Sekundärtext `#6D6D6D` verfehlt auf farbigen Flächen WCAG 2.2 AA (4.5:1), z. B. 2.9:1 auf Blau, 3.4:1 auf Grün
 
 ## 3. Audit
 
