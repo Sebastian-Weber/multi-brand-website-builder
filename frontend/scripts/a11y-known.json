@@ -1,0 +1,13 @@
+{
+  "$description": "axe violations that existed when the gate was introduced. The gate reports them but does not fail on them; any other violation fails. Remove an entry once it is fixed (check-a11y.mjs says when).",
+  "stories": {
+    "components-multicard--blue": {
+      "rules": ["color-contrast", "list"],
+      "since": "2026-11-27",
+      "note": "Grey heading on blue (2.88:1, see tokens/contrast-pairs.json). <br> inside <ul> in multi_card.tsx."
+    },
+    "components-multicard--mint": { "rules": ["list"], "since": "2026-11-27", "note": "<br> inside <ul> in multi_card.tsx" },
+    "components-multicard--yellow": { "rules": ["list"], "since": "2026-11-27", "note": "<br> inside <ul> in multi_card.tsx" },
+    "components-multicard--salmon": { "rules": ["list"], "since": "2026-11-27", "note": "<br> inside <ul> in multi_card.tsx" }
+  }
+}

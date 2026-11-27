@@ -1,0 +1,116 @@
+{
+  "$description": "Text/background pairs that actually occur on the pages (measured 2026-11-27). Values are token names from tokens/build/tokens.json or literal hex for browser defaults. size: normal = WCAG 4.5:1, large (>=24px, or >=18.66px bold) = 3:1. A pair with knownFailure is reported but does not fail the gate; remove it once fixed.",
+  "pairs": [
+    {
+      "text": "#000000",
+      "bg": "color-blue-200",
+      "size": "normal",
+      "where": "Body text and form labels on blue sections (Home, About, Jobs, Privatkunden)"
+    },
+    {
+      "text": "#000000",
+      "bg": "color-mint-200",
+      "size": "normal",
+      "where": "Card text on mint (Home, Privatkunden, Gewerbekunden)"
+    },
+    {
+      "text": "#000000",
+      "bg": "color-salmon-200",
+      "size": "normal",
+      "where": "Card text and form labels on salmon (Home)"
+    },
+    {
+      "text": "#000000",
+      "bg": "color-yellow-50",
+      "size": "normal",
+      "where": "Card text on yellow (Home, Privatkunden, Gewerbekunden)"
+    },
+    {
+      "text": "#000000",
+      "bg": "#FFFFFF",
+      "size": "normal",
+      "where": "Body text on white (all pages)"
+    },
+    {
+      "text": "color-grey-600",
+      "bg": "color-blue-200",
+      "size": "normal",
+      "where": "Grey paragraph on blue hero (Jobs, Lichtdesign)",
+      "knownFailure": {
+        "since": "2026-11-27"
+      }
+    },
+    {
+      "text": "color-grey-600",
+      "bg": "color-mint-200",
+      "size": "large",
+      "where": "Grey card heading on mint, 24px"
+    },
+    {
+      "text": "color-grey-600",
+      "bg": "color-green-200",
+      "size": "normal",
+      "where": "Grey paragraph on green hero (Privatkunden)",
+      "knownFailure": {
+        "since": "2026-11-27"
+      }
+    },
+    {
+      "text": "color-grey-600",
+      "bg": "color-salmon-200",
+      "size": "normal",
+      "where": "Grey paragraph on salmon hero (Smart Home)",
+      "knownFailure": {
+        "since": "2026-11-27"
+      }
+    },
+    {
+      "text": "color-grey-600",
+      "bg": "color-yellow-100",
+      "size": "normal",
+      "where": "Grey paragraph on yellow hero (About)"
+    },
+    {
+      "text": "color-grey-600",
+      "bg": "color-yellow-50",
+      "size": "normal",
+      "where": "Grey paragraph on light yellow hero (Gewerbekunden, Notfallreparaturen)"
+    },
+    {
+      "text": "color-grey-600",
+      "bg": "#FFFFFF",
+      "size": "large",
+      "where": "Grey section heading on white, 24px"
+    },
+    {
+      "text": "color-yellow-100",
+      "bg": "color-purple-900",
+      "size": "normal",
+      "where": "Navbar dropdown caption, 16px"
+    },
+    {
+      "text": "color-yellow-50",
+      "bg": "color-purple-900",
+      "size": "normal",
+      "where": "Navbar and footer links, primary button text"
+    },
+    {
+      "text": "color-yellow-50",
+      "bg": "color-purple-800",
+      "size": "normal",
+      "where": "Hero subheading on accent purple (Home)"
+    },
+    {
+      "text": "color-grey-900",
+      "bg": "#FFFFFF",
+      "size": "large",
+      "where": "Impressum headings"
+    },
+    {
+      "text": "color-purple-900",
+      "bg": "color-green-300",
+      "size": "normal",
+      "where": "Secondary button text"
+    }
+  ]
+}
