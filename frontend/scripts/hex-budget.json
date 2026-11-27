@@ -1,0 +1,8 @@
+{
+  "$description": "Maximum number of hex colours in active code (src, without comments, stories and generated tokens). This number may only go down: lower it when you remove hex values. Set with npm run check:tokens -- --set-budget.",
+  "max": 13,
+  "files": {
+    "src/components/Section_Divider.tsx": 4,
+    "src/index.css": 9
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "cd": {
+    "$type": "color",
+    "$description": "Roles used by src/utils/cdColors.tsx (cdColors)",
+    "primary-color": {
+      "$value": "{color.purple.900}"
+    },
+    "secondary-color": {
+      "$value": "{color.green.300}"
+    },
+    "tertiary-color": {
+      "$value": "{color.yellow.100}"
+    },
+    "primary-accent-color": {
+      "$value": "{color.purple.800}"
+    },
+    "primary-background-color-light": {
+      "$value": "{color.mint.200}"
+    },
+    "primary-background-color-default": {
+      "$value": "{color.mint.200}"
+    },
+    "primary-background-color-dark": {
+      "$value": "{color.mint.200}"
+    },
+    "secondary-background-color-light": {
+      "$value": "{color.yellow.50}"
+    },
+    "secondary-background-color-default": {
+      "$value": "{color.yellow.200}"
+    },
+    "secondary-background-color-dark": {
+      "$value": "{color.yellow.400}"
+    },
+    "tertiary-background-color-light": {
+      "$value": "{color.salmon.200}"
+    },
+    "tertiary-background-color-default": {
+      "$value": "{color.salmon.200}"
+    },
+    "tertiary-background-color-dark": {
+      "$value": "{color.salmon.200}"
+    },
+    "quaternary-background-color-light": {
+      "$value": "{color.blue.200}"
+    },
+    "quaternary-background-color-default": {
+      "$value": "{color.blue.200}"
+    },
+    "quaternary-background-color-dark": {
+      "$value": "{color.blue.200}"
+    },
+    "quinary-background-color-light": {
+      "$value": "{color.salmon.200}"
+    },
+    "quinary-background-color-default": {
+      "$value": "{color.brown.400}"
+    },
+    "quinary-background-color-dark": {
+      "$value": "{color.brown.500}"
+    },
+    "white-background": {
+      "$value": "{color.grey.50}"
+    },
+    "black-background": {
+      "$value": "{color.grey.950}"
+    },
+    "primary-font-color": {
+      "$value": "{color.grey.900}"
+    },
+    "secondary-font-color": {
+      "$value": "{color.grey.600}"
+    },
+    "tertiary-font-color": {
+      "$value": "{color.yellow.50}"
+    }
+  },
+  "legacy": {
+    "$type": "color",
+    "$description": "The five former local copies of cdColors, now cdColorsLegacy. Same role names, different values.",
+    "primary-color": {
+      "$value": "{color.green.300}"
+    },
+    "secondary-color": {
+      "$value": "{color.yellow.200}"
+    },
+    "primary-background-color-light": {
+      "$value": "{color.green.200}"
+    },
+    "primary-background-color-default": {
+      "$value": "{color.green.300}"
+    },
+    "primary-background-color-dark": {
+      "$value": "{color.green.400}"
+    },
+    "secondary-background-color-light": {
+      "$value": "{color.yellow.100}"
+    },
+    "secondary-background-color-default": {
+      "$value": "{color.yellow.200}"
+    },
+    "secondary-background-color-dark": {
+      "$value": "{color.yellow.400}"
+    },
+    "tertiary-background-color-light": {
+      "$value": "{color.mint.200}"
+    },
+    "tertiary-background-color-default": {
+      "$value": "{color.mint.300}"
+    },
+    "tertiary-background-color-dark": {
+      "$value": "{color.mint.400}"
+    },
+    "quaternary-background-color-light": {
+      "$value": "{color.blue.200}"
+    },
+    "quaternary-background-color-default": {
+      "$value": "{color.blue.400}"
+    },
+    "quaternary-background-color-dark": {
+      "$value": "{color.blue.400}"
+    },
+    "quinary-background-color-light": {
+      "$value": "{color.brown.200}"
+    },
+    "quinary-background-color-default": {
+      "$value": "{color.brown.400}"
+    },
+    "quinary-background-color-dark": {
+      "$value": "{color.brown.500}"
+    },
+    "white-background": {
+      "$value": "{color.grey.50}"
+    },
+    "black-background": {
+      "$value": "{color.grey.950}"
+    },
+    "primary-font-color": {
+      "$value": "{color.grey.900}"
+    },
+    "secondary-font-color": {
+      "$value": "{color.grey.600}"
+    }
+  }
+}

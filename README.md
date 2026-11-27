@@ -111,6 +111,40 @@ The project is configured for deployment on [Netlify](https://netlify.com). Conn
 
 ---
 
+## Design tokens and gate
+
+Colours come from design tokens (DTCG format) in `frontend/tokens/`, built with Style Dictionary:
+
+```
+tokens/primitive.json          Tier 1: every colour, named by hue and step (higher = darker)
+tokens/semantic/peters.json    Tier 2: roles (cdColors) and the former local copies (legacy)
+tokens/component/              Tier 3: empty for now
+        │  npm run tokens
+        ▼
+src/styles/tokens.css          CSS custom properties (generated, never edit by hand)
+tokens/build/tokens.json       flat values for scripts and Storybook (generated)
+```
+
+`src/utils/cdColors.tsx` holds no hex values; it points to the generated variables. `cdColorsLegacy` in the same file replaces the five identical local copies.
+
+| Command | Does |
+|---|---|
+| `npm run tokens` | Builds the tokens |
+| `npm run storybook` | Component docs and the token page, with the a11y panel |
+| `npm run gate` | Everything below; one failing check stops a merge |
+
+The gate runs:
+- **Drift**: a fresh token build must match the committed output
+- **Token references**: every token the code names exists
+- **Hex budget**: hex colours in active code may not exceed `scripts/hex-budget.json` (only goes down)
+- **Contrast**: every text/background pair in `tokens/contrast-pairs.json` against WCAG 2.2 AA
+- **Build**: app and Storybook
+- **Accessibility**: axe on every story
+
+Failures that already exist are recorded with a date (`knownFailure` in `contrast-pairs.json`, `scripts/a11y-known.json`). They are reported, not blocking; anything new fails. The a11y check needs a browser once: `npx playwright install chromium`.
+
+---
+
 ## Customization
 
 To adapt this template for a new client:
